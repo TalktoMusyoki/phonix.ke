@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonix.ke | Trusted Tech & Smartphones Kenya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-trust: #0A192F; /* Authority/Security */
+            --royal-action: #1E40AF; /* Sales/Growth */
+            --whatsapp-green: #25D366; /* Kenyan Trust Signal */
+            --light-bg: #F8FAFC;
+            --white: #FFFFFF;
+            --gray-text: #64748B;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--light-bg); color: var(--navy-trust); line-height: 1.6; }
+
+        /* Header & Navigation */
+        header { 
+            background: var(--navy-trust); 
+            padding: 1rem 5%; 
+            display: flex; justify-content: space-between; align-items: center;
+            position: sticky; top: 0; z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .logo { color: var(--white); font-weight: 700; font-size: 1.6rem; text-decoration: none; letter-spacing: -1px; }
+        .logo span { color: #38BDF8; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-weight: 500; }
+
+        /* Hero Banner */
+        .hero { 
+            background: linear-gradient(135deg, #0F172A 0%, #1E40AF 100%);
+            color: white; text-align: center; padding: 60px 20px;
+        }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 10px; }
+        .hero p { opacity: 0.9; margin-bottom: 20px; }
+
+        /* Product Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Section Styling */
+        .brand-section { margin-bottom: 50px; }
+        .brand-header { 
+            display: flex; align-items: center; margin-bottom: 20px; 
+            border-bottom: 2px solid #E2E8F0; padding-bottom: 10px;
+        }
+        .brand-header h2 { font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        /* Product Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+        .card { 
+            background: var(--white); border-radius: 12px; padding: 20px; 
+            text-align: center; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #F1F5F9;
+        }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 200px; object-fit: contain; margin-bottom: 15px; }
+        .price { font-size: 1.3rem; font-weight: 700; color: var(--royal-action); margin: 10px 0; }
+        
+        /* Sales Button */
+        .btn-wa { 
+            display: block; background: var(--whatsapp-green); color: white; 
+            text-decoration: none; padding: 12px; border-radius: 8px; 
+            font-weight: 600; font-size: 0.9rem; transition: 0.3s;
+        }
+        .btn-wa:hover { filter: brightness(0.9); }
+
+        footer { background: var(--navy-trust); color: white; text-align: center; padding: 40px 20px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">PHONIX<span>.KE</span></a>
+    <nav>
+        <a href="#iphone">iPhone</a>
+        <a href="#samsung">Samsung</a>
+        <a href="https://wa.me/message/BMRG4OY77DYHB1">Contact Support</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Quality Tech. Zero Compromise.</h1>
+    <p>Nairobi's Most Trusted Hub for Genuine Smartphones & Accessories.</p>
+</section>
+
+<div class="container">
+
+    <div class="brand-section" id="iphone">
+        <div class="brand-header"><h2>1. Apple iPhone</h2></div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/81SigAnNnpL._AC_SL1500_.jpg" alt="iPhone 15">
+                <h3>iPhone 15 Pro Max</h3>
+                <p class="price">KSh 178,500</p>
+                <a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Order on WhatsApp</a>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/619m6kqcQVL._AC_SL1500_.jpg" alt="iPhone 13">
+                <h3>iPhone 13 (128GB)</h3>
+                <p class="price">KSh 92,000</p>
+                <a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Order on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-section" id="samsung">
+        <div class="brand-header"><h2>2. Samsung Galaxy</h2></div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71WjsZ8nEIL._AC_SL1500_.jpg" alt="S24">
+                <h3>Galaxy S24 Ultra</h3>
+                <p class="price">KSh 165,000</p>
+                <a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Order on WhatsApp</a>
+            </div>
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61S98mK17DL._AC_SL1500_.jpg" alt="A55">
+                <h3>Galaxy A55 5G</h3>
+                <p class="price">KSh 58,000</p>
+                <a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Order on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-section">
+        <div class="brand-header"><h2>3. Tecno & 4. Oppo</h2></div>
+        <div class="grid">
+            <div class="card"><h3>Tecno Camon 30 Pro</h3><p class="price">KSh 42,500</p><a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Buy Now</a></div>
+            <div class="card"><h3>Oppo Reno 11 5G</h3><p class="price">KSh 64,000</p><a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Buy Now</a></div>
+        </div>
+    </div>
+
+    <div class="brand-section">
+        <div class="brand-header"><h2>5. Infinix & 6. Redmi</h2></div>
+        <div class="grid">
+            <div class="card"><h3>Infinix Note 40 Pro</h3><p class="price">KSh 34,000</p><a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Buy Now</a></div>
+            <div class="card"><h3>Redmi Note 13 Pro</h3><p class="price">KSh 48,000</p><a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Buy Now</a></div>
+        </div>
+    </div>
+
+    <div class="brand-section">
+        <div class="brand-header"><h2>7. Google Pixel</h2></div>
+        <div class="grid">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/61Nl-H6y09L._AC_SL1500_.jpg" alt="Pixel 8">
+                <h3>Google Pixel 8 Pro</h3>
+                <p class="price">KSh 125,000</p>
+                <a href="https://wa.me/message/BMRG4OY77DYHB1" class="btn-wa">Order on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Phonix.ke</strong> - Same-day Delivery across Nairobi.</p>
+    <p style="margin-top: 10px; opacity: 0.7;">Official Dealer of Genuine Smartphones in Kenya.</p>
+</footer>
+
+</body>
+</html>
