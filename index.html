@@ -3,138 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Guru Mobile | Premium Tech 2026</title>
+    <title>Phonix.ke | Premium Mobile Store 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
-        .gradient-bg { background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%); }
-        .best-seller-badge { background: #ff4d4d; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold; }
+        .premium-gradient { background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%); }
+        .accent-border { border-bottom: 2px solid #3b82f6; }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.02); }
+        .price-tag { color: #10b981; font-weight: 800; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-white text-slate-900 font-sans antialiased">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-sm py-4 px-6 flex justify-between items-center">
-        <div class="text-2xl font-black tracking-tighter text-black uppercase">ART GURU <span class="text-blue-600">MOBILE</span></div>
-        <div class="hidden md:flex space-x-8 font-medium">
-            <a href="#iphone" class="hover:text-blue-600">iPhone</a>
-            <a href="#samsung" class="hover:text-blue-600">Samsung</a>
-            <a href="#other" class="hover:text-blue-600">Other Brands</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b py-4 px-6 flex justify-between items-center">
+        <div class="text-3xl font-black tracking-tighter text-slate-900 italic">PHONIX<span class="text-blue-600">.KE</span></div>
+        <div class="hidden lg:flex space-x-10 font-bold text-sm uppercase tracking-widest">
+            <a href="#iphone" class="hover:text-blue-600 transition">iPhone</a>
+            <a href="#samsung" class="hover:text-blue-600 transition">Samsung</a>
+            <a href="#pixel" class="hover:text-blue-600 transition">Pixels</a>
+            <a href="#other" class="hover:text-blue-600 transition">More Brands</a>
         </div>
-        <button class="bg-black text-white px-5 py-2 rounded-full text-sm font-bold">Contact Us</button>
+        <div class="flex items-center gap-4">
+            <a href="https://wa.me/yournumber" class="bg-green-500 text-white p-2 rounded-full hover:bg-green-600">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+            </a>
+            <button class="bg-slate-900 text-white px-6 py-2 rounded-lg font-bold text-sm">ENQUIRE</button>
+        </div>
     </nav>
 
-    <header class="gradient-bg text-white py-20 px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">The Future of Mobile.</h1>
-        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">From the 2025 best-selling Galaxy A16 to the groundbreaking iPhone 17 Pro Max. Authentic tech, local warranty.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#samsung" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Shop Samsung A-Series</a>
-            <a href="#iphone" class="bg-white text-black px-8 py-3 rounded-lg font-bold">Shop iPhone 17</a>
+    <header class="premium-gradient text-white py-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter italic">RISE WITH THE NEW.</h1>
+            <p class="text-xl text-slate-300 mb-10 font-light">Stocking the latest 2026 releases: iPhone 17 Pro Max, Galaxy S26 Ultra, and the best-selling Galaxy A16.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#samsung" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-black uppercase tracking-wider shadow-xl">Shop Samsung 2026</a>
+                <a href="#iphone" class="bg-white text-slate-900 px-10 py-4 rounded-full font-black uppercase tracking-wider shadow-xl">Apple Collection</a>
+            </div>
         </div>
     </header>
 
-    <section id="iphone" class="py-16 px-6 max-w-7xl mx-auto">
-        <div class="flex justify-between items-end mb-8 border-b pb-4">
-            <h2 class="text-3xl font-bold">Apple iPhone Series</h2>
-            <p class="text-gray-500">Models 11 through 17 Pro Max</p>
+    <section id="iphone" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-4 mb-12">
+            <h2 class="text-4xl font-black italic underline decoration-blue-600">iPHONE SERIES</h2>
+            <span class="text-slate-400 font-mono">11 — 17 PRO MAX</span>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white border p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-                <div class="h-64 bg-gray-100 rounded-xl mb-4 flex items-center justify-center italic text-gray-400">[iPhone 17 Pro Max Image]</div>
-                <h3 class="text-xl font-bold">iPhone 17 Pro Max</h3>
-                <p class="text-gray-500 text-sm mb-4">A19 Pro Chip | Titanium Design</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="border-2 border-slate-100 p-8 rounded-3xl hover-scale bg-slate-50">
+                <div class="aspect-square bg-white rounded-2xl mb-6 flex items-center justify-center text-slate-300 italic">[iPhone 17 Pro Max Image]</div>
+                <h3 class="text-2xl font-black mb-1">iPhone 17 Pro Max</h3>
+                <p class="text-slate-500 text-sm mb-6 uppercase tracking-widest font-bold">LATEST RELEASE</p>
                 <div class="flex justify-between items-center">
-                    <span class="text-2xl font-black">Call for Price</span>
-                    <button class="text-blue-600 font-bold">View Specs</button>
+                    <span class="price-tag text-2xl">KES XX,XXX</span>
+                    <button class="bg-slate-900 text-white px-4 py-2 rounded-lg font-bold text-xs uppercase">Buy Now</button>
                 </div>
             </div>
-            <div class="bg-white border p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-                <div class="h-64 bg-gray-100 rounded-xl mb-4 flex items-center justify-center italic text-gray-400">[iPhone 17 Image]</div>
-                <h3 class="text-xl font-bold">iPhone 17</h3>
-                <p class="text-gray-500 text-sm mb-4">Latest 2026 Model | Dynamic Island</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-2xl font-black">Call for Price</span>
-                    <button class="text-blue-600 font-bold">View Specs</button>
-                </div>
-            </div>
-            <div class="bg-gray-900 text-white p-6 rounded-2xl shadow-sm flex flex-col justify-center">
-                <h3 class="text-2xl font-bold mb-2">iPhone 11 - 16</h3>
-                <p class="text-gray-400 mb-6 text-sm">Certified pre-owned and new stock available for all legacy models.</p>
-                <button class="bg-white text-black py-3 rounded-lg font-bold">Download Price List</button>
+            <div class="border-2 border-slate-100 p-8 rounded-3xl hover-scale">
+                <div class="aspect-square bg-slate-100 rounded-2xl mb-6 flex items-center justify-center text-slate-300 italic">[iPhone 16 / 15 Image]</div>
+                <h3 class="text-2xl font-black mb-1">iPhone 13 - 16</h3>
+                <p class="text-slate-500 text-sm mb-6">Clean Ex-UK & New in Box</p>
+                <button class="w-full border-2 border-slate-900 py-3 rounded-xl font-black hover:bg-slate-900 hover:text-white transition">Full iPhone Catalog</button>
             </div>
         </div>
     </section>
 
-    <section id="samsung" class="py-16 bg-gray-100 px-6">
+    <section id="samsung" class="py-20 bg-slate-900 text-white px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-end mb-8 border-b border-gray-300 pb-4">
-                <h2 class="text-3xl font-bold text-blue-800">Samsung Galaxy</h2>
-                <p class="text-gray-600">A-Series & S-Series (S21 - S26)</p>
-            </div>
+            <h2 class="text-5xl font-black mb-12 italic text-blue-400">GALAXY HUB</h2>
             
-            <div class="bg-white p-8 rounded-3xl shadow-sm flex flex-col md:flex-row items-center gap-8 mb-12">
-                <div class="md:w-1/2 h-80 bg-blue-50 rounded-2xl flex items-center justify-center italic text-blue-300">
-                    [Galaxy A16 5G Image]
-                </div>
-                <div class="md:w-1/2">
-                    <span class="best-seller-badge mb-4 inline-block">MOST SOLD OF 2025</span>
-                    <h3 class="text-4xl font-black mb-2">Galaxy A16 5G</h3>
-                    <p class="text-gray-600 mb-6 text-lg">Still the undisputed king of performance and value. Available in all colors.</p>
-                    <div class="text-3xl font-black text-blue-600 mb-6">Price: KES XX,XXX</div>
-                    <button class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold shadow-lg shadow-blue-200">Order on WhatsApp</button>
+            <div class="bg-white/5 border border-white/10 p-10 rounded-[3rem] flex flex-col lg:flex-row items-center gap-12 mb-16">
+                <div class="lg:w-1/2 flex justify-center text-blue-500 italic">[Samsung Galaxy A16 Image]</div>
+                <div class="lg:w-1/2">
+                    <div class="bg-blue-600 text-[10px] font-black px-3 py-1 rounded inline-block mb-4 uppercase tracking-widest">Top Seller 2025/2026</div>
+                    <h3 class="text-5xl font-black mb-4 tracking-tighter">GALAXY A16 5G</h3>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">The most sold Samsung of 2025. Unmatched battery, stunning 5G speeds, and premium design at an A-series price.</p>
+                    <div class="flex gap-4 items-center">
+                        <span class="text-4xl font-black text-green-400">KES XX,XXX</span>
+                        <a href="#" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-black uppercase">GET THIS DEAL</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 border rounded-xl text-center">
-                    <div class="h-32 bg-gray-50 mb-2 italic text-xs flex items-center justify-center text-gray-400">[S26 Ultra Image]</div>
-                    <h4 class="font-bold">Galaxy S26 Ultra</h4>
-                    <p class="text-xs text-gray-500">2026 Flagship</p>
+            <h4 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500">New 2026 A-Series Lineup</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="font-black text-2xl mb-1">A57</div>
+                    <div class="text-blue-400 text-xs font-bold uppercase mb-4 italic">Latest</div>
+                    <div class="text-slate-400 text-sm">S-Series Features in an A-Series Body</div>
                 </div>
-                <div class="bg-white p-4 border rounded-xl text-center">
-                    <div class="h-32 bg-gray-50 mb-2 italic text-xs flex items-center justify-center text-gray-400">[A57 Image]</div>
-                    <h4 class="font-bold">Galaxy A57</h4>
-                    <p class="text-xs text-gray-500">Latest A-Series</p>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="font-black text-2xl mb-1">A37</div>
+                    <div class="text-blue-400 text-xs font-bold uppercase mb-4 italic">New</div>
+                    <div class="text-slate-400 text-sm">Perfect Balance of Power</div>
                 </div>
-                <div class="bg-white p-4 border rounded-xl text-center">
-                    <div class="h-32 bg-gray-50 mb-2 italic text-xs flex items-center justify-center text-gray-400">[A37 Image]</div>
-                    <h4 class="font-bold">Galaxy A37</h4>
-                    <p class="text-xs text-gray-500">New Arrival</p>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="font-black text-2xl mb-1">A27</div>
+                    <div class="text-blue-400 text-xs font-bold uppercase mb-4 italic">New</div>
+                    <div class="text-slate-400 text-sm">Entry Flagship Visuals</div>
                 </div>
-                <div class="bg-white p-4 border rounded-xl text-center">
-                    <div class="h-32 bg-gray-50 mb-2 italic text-xs flex items-center justify-center text-gray-400">[A27 Image]</div>
-                    <h4 class="font-bold">Galaxy A27</h4>
-                    <p class="text-xs text-gray-500">New Arrival</p>
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                    <div class="font-black text-2xl mb-1">A17</div>
+                    <div class="text-blue-400 text-xs font-bold uppercase mb-4 italic">Available</div>
+                    <div class="text-slate-400 text-sm">The 2026 Budget King</div>
                 </div>
             </div>
-            
-            <p class="mt-8 text-center text-sm font-medium text-gray-500 italic">Also stocking: A06, A07, A17, A26, A36, A56, and S21 - S25 Series.</p>
+
+            <h4 class="text-xl font-bold mb-8 uppercase tracking-widest text-slate-500 text-center">Galaxy S Flagships (S21 - S26)</h4>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20 font-bold italic">S26 ULTRA</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20 font-bold italic">S25</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20 font-bold italic">S24</span>
+                <span class="bg-white/10 px-6 py-2 rounded-full border border-white/20 font-bold italic text-slate-500">S23 / S22 / S21</span>
+            </div>
         </div>
     </section>
 
-    <section id="other" class="py-16 px-6 max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-12 italic">More Brands Available</h2>
-        <div class="flex flex-wrap justify-center gap-10 opacity-60 grayscale hover:grayscale-0 transition-all">
-            <span class="text-xl font-bold">Google Pixel</span>
-            <span class="text-xl font-bold">Realme</span>
-            <span class="text-xl font-bold text-red-600">Redmi</span>
-            <span class="text-xl font-bold text-green-600">Oppo</span>
-            <span class="text-xl font-bold text-blue-600">Tecno</span>
-            <span class="text-xl font-bold text-purple-600">Infinix</span>
+    <section id="other" class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-black text-center mb-16 italic tracking-tight">GLOBAL BRANDS. LOCAL DELIVERY.</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center items-center grayscale opacity-50 hover:opacity-100 transition-all">
+            <div class="font-black text-2xl">PIXEL</div>
+            <div class="font-black text-2xl text-red-600">REDMI</div>
+            <div class="font-black text-2xl text-green-600">OPPO</div>
+            <div class="font-black text-2xl text-blue-500">TECNO</div>
+            <div class="font-black text-2xl text-orange-500">REALME</div>
+            <div class="font-black text-2xl text-purple-600">INFINIX</div>
         </div>
     </section>
 
-    <footer class="bg-black text-white py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-2xl font-black">ART GURU MOBILE</div>
-            <div class="text-gray-400 text-sm text-center md:text-left">
-                &copy; 2026 Art Guru Mobile. All Rights Reserved.<br>
-                Nairobi, Kenya.
+    <footer class="bg-slate-50 py-16 px-6 border-t">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="text-3xl font-black italic mb-6">PHONIX<span class="text-blue-600">.KE</span></div>
+                <p class="text-slate-500 leading-relaxed">Kenya's leading retailer for 2026 mobile technology. Authentic stock, guaranteed performance.</p>
             </div>
-            <div class="flex space-x-6 text-xl">
-                <i class="fa-brands fa-whatsapp cursor-pointer hover:text-green-500"></i>
-                <i class="fa-brands fa-instagram cursor-pointer hover:text-pink-500"></i>
-                <i class="fa-brands fa-facebook cursor-pointer hover:text-blue-500"></i>
+            <div>
+                <h4 class="font-black uppercase mb-6 tracking-widest text-xs">Navigation</h4>
+                <ul class="space-y-3 font-bold text-slate-600">
+                    <li><a href="#" class="hover:text-blue-600">Trade-In Your Phone</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Warranty Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Delivery Information</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black uppercase mb-6 tracking-widest text-xs">Visit Our Shop</h4>
+                <p class="text-slate-600 font-bold">Nairobi, Kenya</p>
+                <div class="flex gap-4 mt-6 text-2xl">
+                    <i class="fa-brands fa-instagram hover:text-pink-600 cursor-pointer"></i>
+                    <i class="fa-brands fa-facebook hover:text-blue-700 cursor-pointer"></i>
+                    <i class="fa-brands fa-tiktok hover:text-black cursor-pointer"></i>
+                </div>
             </div>
         </div>
     </footer>
